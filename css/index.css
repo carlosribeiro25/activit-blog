@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header, h1{ 
+    display: block;
+    padding: 0.5rem;
+    
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+article, h2{
+    margin-top: 0.5rem; 
+    max-width: 900px;
+    margin-left: 2rem;
+    margin: 1rem;
+    font-size: larger;
+}
+
+.card-one {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 1rem;
+}
+
+img{
+    border-radius: 4px;
+}
+
+
+@media (max-width: 768px) {
+   .card-one, .card-two , .card-three {
+    flex-direction: column; /* Troca de lado para cima/baixo */
+    text-align: left;
+  }
+
+  .card-one, .card-two, .card-three img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+.card-two{
+    display: flex;
+    gap: 1rem;
+}
+
+.card-three{
+    display: flex;
+    gap: 1rem;
+
+}
+
+footer{
+    background-color: black;
+    height: 4rem;
+    padding: 1rem;
+    
+
+}
+
+.text-footer{
+    text-align: center;
+    color: white;
+}
+
+
